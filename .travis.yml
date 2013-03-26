@@ -1,0 +1,12 @@
+script: bundle exec rspec
+language: ruby
+before_install: gem install bundler
+
+rvm:
+  - 1.9.3
+  - 2.0.0
+
+env:
+  - SIMPLE_FORM_VERSION=v2.0
+  - SIMPLE_FORM_VERSION=v2.1
+
