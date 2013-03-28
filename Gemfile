@@ -11,4 +11,3 @@ when 'v2.0' then
 when 'v2.1' then
   gem 'simple_form', github: 'plataformatec/simple_form', branch: 'v2.1'
 end
-

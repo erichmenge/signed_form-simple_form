@@ -16,4 +16,3 @@ module SignedForm
 end
 
 ActionView::Base.send :include, SignedForm::SimpleForm::ActionView::FormHelper
-

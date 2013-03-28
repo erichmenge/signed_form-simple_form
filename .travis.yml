@@ -9,4 +9,3 @@ rvm:
 env:
   - SIMPLE_FORM_VERSION=v2.0
   - SIMPLE_FORM_VERSION=v2.1
-

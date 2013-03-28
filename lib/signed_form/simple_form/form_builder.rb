@@ -15,4 +15,3 @@ module SignedForm
     end
   end
 end
-

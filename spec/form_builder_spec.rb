@@ -19,4 +19,3 @@ describe SignedForm::SimpleForm::FormBuilder do
     data[:user].should include(:name, :bar)
   end
 end
-
