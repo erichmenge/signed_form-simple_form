@@ -9,7 +9,7 @@ SignedForm.
 
 Add this line to your application's Gemfile:
 
-    gem 'signed_form-simple_form', github: 'erichmenge/signed_form-simple_form', require: 'signed_form/simple_form'
+    gem 'signed_form-simple_form', require: 'signed_form/simple_form'
 
 And then execute:
 
