@@ -9,7 +9,9 @@ SignedForm.
 
 Add this line to your application's Gemfile:
 
-    gem 'signed_form-simple_form', require: 'signed_form/simple_form'
+```ruby
+gem 'signed_form-simple_form'
+```
 
 And then execute:
 
@@ -17,7 +19,7 @@ And then execute:
 
 ## Usage
 
-``` erb
+```erb
 <%= signed_simple_form_for(@user) do |f| %>
   <%= f.input :name %>
 <% end %>
