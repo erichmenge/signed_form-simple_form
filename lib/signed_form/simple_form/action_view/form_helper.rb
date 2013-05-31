@@ -4,8 +4,11 @@ module SignedForm
       module FormHelper
         def signed_simple_form_for(record, options = {}, &block)
           options[:builder] ||= SignedForm::SimpleForm::FormBuilder
-          options[:wrap_form] ||= :simple_form_for
-          signed_form_for(record, options, &block)
+
+          simple_form_for(record, options) do |f|
+            output = capture(f, &block)
+            f.form_signature_tag + output
+          end
         end
       end
     end

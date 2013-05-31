@@ -3,6 +3,9 @@ require 'spec_helper'
 describe SignedForm::SimpleForm::FormBuilder do
   include ViewHelper
 
+  before { SignedForm.secret_key = "abc123" }
+  after  { SignedForm.secret_key = nil }
+
   it 'should build a signed form' do
     content = signed_simple_form_for(:user) do |f|
       f.input :name
